@@ -5,19 +5,186 @@ body,html{
 body{
     overflow: hidden;
 }
+a{
+    color:#fff;text-decoration: none;
+    font-family: "Microsoft Yahei";
+}
 header{
     width:100%;height:60px;
     background: #168bd8;
+    position:fixed;top:0;left:0;
+}
+header .con{
+    width:1000px;height:100%;
+    display: flex;
+    margin:0 auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .logo:nth-child(1){
+    width:120px;height:40px;
+    background: url(../img/tpjl.png) 0 0;
+}
+header .index{
+    margin-top:20px;
+    font-size: 16px;
+}
+header .index:nth-child(2){
+    margin-left: 60px;
+}
+header .last{
+    font-size: 10px;
+    padding-top: 30px;
+}
+header .last:nth-child(5){
+    margin-left: 200px;
+}
+header .last:nth-child(6){
+    margin-right:20px;
+}
+header .last:nth-child(9){
+    color:#FFDA28;
 }
 #fullpage{
+    padding-top: 30px;
     width:100%;height:100%;
 }
 section{
     width:100%;height:100%;
 }
 section:nth-child(1){
+    background: url(../img/bg1.jpg);
+}
+section:nth-child(2){
     background: url(../img/bg-1.jpg);
 }
-section:nth-child(1){
-    background: url(../img/bg-1.jpg);
+section:nth-child(3){
+    background: url(../img/bg-2.jpg);
+}
+section:nth-child(4){
+    background: url(../img/bg-3.jpg);
+}
+
+
+section .left{
+    width:50%;height:80%;
+    float:left;
+    /*border:1px solid red;*/
+    box-sizing: border-box;
+    position:relative;
+}
+section .right{
+    width:50%;height:80%;
+    float:right;
+    /*border:1px solid red;*/
+    box-sizing: border-box;
+    position:relative;
+}
+section p{
+    font-size: 30px;
+    text-align: center;
+    color:#fff;font-family: "苹方";
+}
+section .left .box:nth-child(1){
+    width:500px;height:158px;
+    background: url(../img/launch.png);
+    position:absolute;top:50px;right:0;
+}
+section .left .box:nth-child(2){
+    width:119px;height:78px;
+    background: url(../img/flight.png);
+    position:absolute;top:50px;right:50px;
+}
+
+section .right .box:nth-child(1){
+    padding:40px 30px;
+    width:300px;height:250px;
+    background: #4EBFFC;
+    border-radius:5px;
+    position: absolute;left:0;right:0;
+    margin:0 auto;  top:50px;
+}
+section .right .box p{
+    width:100%;height:20px;
+    margin: 0;left: 0;
+}
+section .right .box .username{
+    width:100%;height:38px;
+    border:1px solid #fff;
+    background: #FAFFBD;
+}
+section .right .box  .username i{
+    margin:0;padding: 0;
+    display: block;
+    width:38px;height:38px;
+    background: #fff;
+    float:left;
+}
+section .right .box  .username input[name=username]{
+    display: inline-block;
+    width:250px;height:38px;
+    background: #FAFFBD;
+    margin:0;padding: 0;outline:0;border:0;
+}
+
+section .right .box .password{
+    width:100%;height:38px;
+    border:1px solid #fff;
+    background: #FAFFBD;
+}
+section .right .box  .password i{
+    margin:0;padding: 0;
+    display: block;
+    width:38px;height:38px;
+    background: #fff;
+    float:left;
+}
+section .right .box  .password input[name=password]{
+    display: inline-block;
+    width:250px;height:38px;
+    background: #FAFFBD;
+    margin:0;padding: 0;outline:0;border:0;
+}
+section .right .box .yz:after,.yz:before{
+    content:"";display: block;
+}
+.yz:after{
+    clear:both;
+}
+section .right .box .yz input[name=yz]{
+    display: block;float:left;
+    width:150px;height:38px;
+    border:1px solid #fff;
+}
+section .right .box .yz img{
+    display: block;float:left;
+    width:80px ;height:38px;
+    margin-left:10px ;padding: 0;
+    border:0;
+}
+section .right .box .yz p{
+    display: block;float:right;
+    width:50px;height:100%;
+    line-height: 38px;
+    margin: 0;padding: 0;
+    border:0;
+    font-size: 14px;
+}
+section .right .box .button input{
+    width:100%;height:38px;
+    outline: none;border:0;
+    background: #FFD850;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 0 1px #ccc;
+}
+section .right .box .other{
+    padding-top: 20px;
+}
+section .right .box .other a{
+    font-size: 12px;
+}
+section .right .box .other a:nth-child(3){
+    float:right;
 }
