@@ -25,7 +25,7 @@ $().ready(function () {
             marginTop:num*height,
             transition:"margin 1s ease"
         })
-
+        sections(num);
 
     })
 
