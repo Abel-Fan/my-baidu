@@ -5,6 +5,9 @@ body,html{
 body{
     overflow: hidden;
 }
+p,h3,h4{
+    margin:0;padding:0;list-style: none;
+}
 a{
     color:#fff;text-decoration: none;
     font-family: "Microsoft Yahei";
@@ -13,6 +16,7 @@ header{
     width:100%;height:60px;
     background: #168bd8;
     position:fixed;top:0;left:0;
+    z-index: 999;
 }
 header .con{
     width:1000px;height:100%;
@@ -47,11 +51,11 @@ header .last:nth-child(9){
     color:#FFDA28;
 }
 #fullpage{
-    padding-top: 30px;
     width:100%;height:100%;
 }
 section{
     width:100%;height:100%;
+    position:relative;
 }
 section:nth-child(1){
     background: url(../img/bg1.jpg);
@@ -65,126 +69,191 @@ section:nth-child(3){
 section:nth-child(4){
     background: url(../img/bg-3.jpg);
 }
-
-
-section .left{
-    width:50%;height:80%;
-    float:left;
+section .section_con{
+    width:1000px;height:100%;
     /*border:1px solid red;*/
-    box-sizing: border-box;
+    margin:0 auto;
     position:relative;
 }
-section .right{
-    width:50%;height:80%;
-    float:right;
-    /*border:1px solid red;*/
-    box-sizing: border-box;
-    position:relative;
+
+/*第一屏*/
+
+/*cloud*/
+section .cloud{
+    position:absolute;
+    top:0;left:0;
+    width:100%;height:100%;
+    background-size: contain;
+    background: url(../img/cloud.png) repeat-y;
+    animation:cloud 50s linear infinite;
 }
-section p{
-    font-size: 30px;
-    text-align: center;
-    color:#fff;font-family: "苹方";
+section .cloud:nth-child(2){
+    background: url(../img/cloud_1.png)  no-repeat;
 }
-section .left .box:nth-child(1){
-    width:500px;height:158px;
-    background: url(../img/launch.png);
-    position:absolute;top:50px;right:0;
+section .cloud:nth-child(3){
+    background: url(../img/cloud_2.png)  no-repeat;
 }
-section .left .box:nth-child(2){
+
+@media screen and (max-width: 1000px){
+    section .section_con .left{
+        width:100%;height:100%;
+        position:absolute;
+        top:0;left:0;bottom:0;right:0;
+        margin:auto;
+    }
+    section:nth-child(1) .section_con .left .launch{
+        width:501px;height:158px;
+        position:absolute;
+        top:25%;left:20%;
+    }
+
+    .section .con_img{
+        width:66px;height:123px;
+        position:absolute;
+        top:30%;left:20%
+    }
+    .section .con_con{
+        width:414px;height:123px;
+        position:absolute;
+        top:30%;left:30%;
+        color:#fff;
+    }
+
+}
+@media screen and (min-width: 1000px) {
+    section .section_con .left{
+        width:50%;height:100%;
+        position:absolute;
+        top:0;left:0;
+    }
+    section .section_con .right{
+        width:15%;height:100%;
+        position:absolute;
+        top:0;right:0;
+    }
+    section:nth-child(1) .section_con .left .launch{
+        width:501px;height:158px;
+        position:absolute;
+        top:15%;
+    }
+
+    .section .con_img{
+        width:66px;height:123px;
+        position:absolute;
+        top:30%;
+    }
+    .section .con_con{
+        width:414px;height:123px;
+        position:absolute;
+        top:30%;left:20%;
+        color:#fff;
+    }
+
+    .section .con2_img{
+        width:444px;height:427px;
+        position:absolute;top:20%;right:0;
+    }
+}
+
+
+section:nth-child(1) .section_con .left .flight{
     width:119px;height:78px;
-    background: url(../img/flight.png);
-    position:absolute;top:50px;right:50px;
+    position:absolute;
+    top:15%;left:60%;
+    animation:flight 2s linear infinite alternate;
 }
 
-section .right .box:nth-child(1){
-    padding:40px 30px;
-    width:300px;height:250px;
-    background: #4EBFFC;
-    border-radius:5px;
-    position: absolute;left:0;right:0;
-    margin:0 auto;  top:50px;
-}
-section .right .box p{
-    width:100%;height:20px;
-    margin: 0;left: 0;
-}
-section .right .box .username{
-    width:100%;height:38px;
-    border:1px solid #fff;
-    background: #FAFFBD;
-}
-section .right .box  .username i{
-    margin:0;padding: 0;
-    display: block;
-    width:38px;height:38px;
-    background: #fff;
-    float:left;
-}
-section .right .box  .username input[name=username]{
-    display: inline-block;
-    width:250px;height:38px;
-    background: #FAFFBD;
-    margin:0;padding: 0;outline:0;border:0;
+section:nth-child(1) .section_con .right .form{
+    position:absolute;
+    top:15%;right:0;
 }
 
-section .right .box .password{
-    width:100%;height:38px;
-    border:1px solid #fff;
-    background: #FAFFBD;
+section .bottom{
+    width:100%;
+    height:130px;
+    position:absolute;
+    bottom:0;
+    background: url(../img/bg-1.jpg);
 }
-section .right .box  .password i{
-    margin:0;padding: 0;
-    display: block;
-    width:38px;height:38px;
-    background: #fff;
-    float:left;
+section .bottom a{
+    display: block;width:30px;height:26px;
+    margin: 50px auto;
+    background: url(../img/arrow.png);
+    animation:arrow 1s linear infinite alternate;
 }
-section .right .box  .password input[name=password]{
-    display: inline-block;
-    width:250px;height:38px;
-    background: #FAFFBD;
-    margin:0;padding: 0;outline:0;border:0;
+section .bottom .ship{
+    width:242px;height:228px;
+    position:absolute;top:-148%;left:25%;
 }
-section .right .box .yz:after,.yz:before{
-    content:"";display: block;
+
+section .bottom .hill{
+    width:265px;height:175px;
+    position:absolute;
+    top:-39%;left:0;
 }
-.yz:after{
-    clear:both;
+section .bottom .hill_2{
+     width:63px;height:78px;
+     position:absolute;
+     top:-10%;left:60%;
 }
-section .right .box .yz input[name=yz]{
-    display: block;float:left;
-    width:150px;height:38px;
-    border:1px solid #fff;
+section .bottom .hill_3{
+    width:260px;height:175px;
+    position:absolute;
+    top:-36%;left:80%;
 }
-section .right .box .yz img{
-    display: block;float:left;
-    width:80px ;height:38px;
-    margin-left:10px ;padding: 0;
-    border:0;
+
+section:nth-child(3) .bottom{
+    background: url(../img/bg-3-head.png) no-repeat;
 }
-section .right .box .yz p{
-    display: block;float:right;
-    width:50px;height:100%;
-    line-height: 38px;
-    margin: 0;padding: 0;
-    border:0;
+section:nth-child(4) .con2_img{
+    width:603px;height:361px;
+}
+section .bottom .boxone{
+    width:44px;height:44px;
+    background: #35b568;
+    position:absolute;
+    bottom:0;left:20%;
+}
+section .bottom .boxtwo{
+    width:88px;height:88px;
+    background: #4ac179;
+    position:absolute;
+    bottom:0;left:30%;
+}
+section .bottom .boxthree{
+    width:44px;height:44px;
+    background: #8ae75a;
+    position:absolute;
+    bottom:0;left:40%;
+}
+section .bottom .boxfour{
+    width:44px;height:44px;
+    background: #8ae75a;
+    position:absolute;
+    bottom:0;left:70%;
+}
+section .bottom .boxfive{
+    width:44px;height:44px;
+    background: #4ac179;
+    position:absolute;
+    bottom:0;left:80%;
+}
+
+
+.section .con_con h3{
+    font-size: 34px;
+}
+.section .con_img{
+    animation: h3rotate 2s linear infinite;
+}
+.section .con_con p{
+    padding-top:15px;
+    font-size: 19px;
+    line-height: 30px;
+}
+section:nth-child(4) .bottom{
+    color:#fff;
+    text-align: center;
+    line-height: 130px;
     font-size: 14px;
-}
-section .right .box .button input{
-    width:100%;height:38px;
-    outline: none;border:0;
-    background: #FFD850;
-    font-size: 20px;
-    font-weight: bold;
-    box-shadow: 0 0 1px #ccc;
-}
-section .right .box .other{
-    padding-top: 20px;
-}
-section .right .box .other a{
-    font-size: 12px;
-}
-section .right .box .other a:nth-child(3){
-    float:right;
 }

@@ -1,0 +1,60 @@
+@keyframes cloud {
+    0%{
+        background-position: 1000px 0;
+    }
+    50%{
+        background-position:0 0 ;
+    }
+    100%{
+        background-position: -1000px 0;
+    }
+}
+
+@keyframes flight {
+    0%{
+        top:10%;
+    }
+    100%{
+        top:15%;
+    }
+}
+
+@keyframes arrow {
+    0%{
+        margin-op:50px;
+    }
+    100%{
+        margin-top:60px;
+    }
+}
+
+@keyframes h3rotate {
+    0%{
+        transform:rotateY(0deg);
+    }
+    100%{
+        transform:rotateY(360deg);
+    }
+}
+
+@keyframes sectionsL {
+    0%{
+        opacity:0;
+        transform: translate(-100px,0);
+    }
+    100%{
+        opacity:1;
+        transform: translate(0,0);
+    }
+}
+
+@keyframes sectionsR {
+    0%{
+        opacity:0;
+        transform: translate(100px,0);
+    }
+    100%{
+        opacity:1;
+        transform: translate(0,0);
+    }
+}
