@@ -41,10 +41,10 @@ $().ready(function () {
     function sections(num) {
         var num2 = -num + 1;
         $(".section .left").css({
-            animation:null
+            animation:""
         })
         $(".section .right").css({
-            animation:null
+            animation:""
         })
         $(".section:nth-child("+num2+") .left").css({
             animation: "sectionsL 2s linear"

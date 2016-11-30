@@ -2,14 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b778050e-51d8-4470-9fbe-a45c9e046cbb" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/animate.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/less/less.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/less/var.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/baidu.html" afterPath="$PROJECT_DIR$/baidu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/baidu.css" afterPath="$PROJECT_DIR$/css/baidu.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/baidu.js" afterPath="$PROJECT_DIR$/js/baidu.js" />
     </list>
     <ignored path="baidu.iws" />
@@ -35,8 +27,8 @@
       <file leaf-file-name="baidu.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/baidu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.31130436">
-              <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.48347825">
+              <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -554,8 +546,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/baidu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31130436">
-          <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.48347825">
+          <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
           <folding />
         </state>
       </provider>
